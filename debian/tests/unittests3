@@ -1,0 +1,18 @@
+#!/bin/sh
+set -efu
+
+pys="$(py3versions -sv 2> /dev/null)"
+
+cp -a tests "$AUTOPKGTEST_TMP"
+cd "$AUTOPKGTEST_TMP"
+
+for py in $pys; do
+	echo "=== python$py ==="
+	PYTHONPATH=. python$py tests/test_unittest.py
+	python$py tests/test_doctest.py
+	python$py -m twisted.trial tests/test_generic_integration.py
+	python$py -m zope.testrunner --test-path=. --test-file-pattern=test_generic_integration
+	python$py -m testtools.run --verbose tests/test_testtools.py
+	python$py -m subunit.run tests/test_generic_integration.py | subunit2pyunit
+	python$py -m pytest tests/test_pytest.py
+done

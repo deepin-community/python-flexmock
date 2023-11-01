@@ -1,0 +1,10 @@
+---
+Bug-Database: https://github.com/bkabrda/flexmock/issues
+Bug-Submit: https://github.com/bkabrda/flexmock/issues/new
+Changelog: https://flexmock.readthedocs.io/en/latest/changelog/
+Documentation: https://flexmock.readthedocs.org/
+Registry:
+  - Name: PyPI
+    Entry: flexmock
+Repository: https://github.com/bkabrda/flexmock.git
+Repository-Browse: https://github.com/bkabrda/flexmock
