@@ -1,0 +1,11 @@
+Tests: unittests3
+Depends:
+ python3-all,
+ python3-flexmock,
+ python3-pytest,
+ python3-subunit,
+ python3-testtools,
+ python3-twisted,
+ python3-zope.testrunner,
+ subunit
+Restrictions: allow-stderr

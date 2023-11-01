@@ -1,5 +1,232 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-flexmock (0.11.3-3) unstable; urgency=medium
 
-  * Initial release
+  * Clean correctly. (Closes: #1046630)
+  * Bump Standards-Version to 4.6.2, no changes needed.
+  * Bump copyright years.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 24 Oct 2023 12:01:38 +0200
+
+python-flexmock (0.11.3-2) unstable; urgency=medium
+
+  * Support the nocheck build profile.
+  * Bump Standards-Version to 4.6.1, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 17 Oct 2022 14:56:04 +0200
+
+python-flexmock (0.11.3-1) unstable; urgency=medium
+
+  * New upstream point release.
+  * Drop patches, superseded upstream.
+  * Upstream reorganised tests, update runners.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 18 Feb 2022 12:20:20 -0400
+
+python-flexmock (0.11.2-2) unstable; urgency=medium
+
+  * Exclude docs/conf.py from the wheel. (Closes: #1003396)
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 09 Jan 2022 10:22:50 -0400
+
+python-flexmock (0.11.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update tests, reorganised upstream.
+  * Run tests with subunit and testtools.
+  * Build with poetry (pybuild pyproject plugin).
+    - Patch: Don't install docs with the code.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 07 Jan 2022 18:50:06 -0400
+
+python-flexmock (0.11.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Run the normal upstream test suite with the trial runner, instead of the
+    pytest suite.
+  * Run the upstream test suite with zope.testrunner.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 23 Nov 2021 07:54:19 -0400
+
+python-flexmock (0.11.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Build-Depend on python3-setuptools.
+  * Update path to unittest suite.
+  * Explicitly run unittest suite with the unittest module.
+  * Run the pytest suite with twisted's trial runner too.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 09 Nov 2021 00:52:30 -0800
+
+python-flexmock (0.10.10-2) unstable; urgency=medium
+
+  * Drop python3-nose tests, allowing removal from Debian (see: #997758).
+    Upstream doesn't support nose2, yet, so we can't just run the nose
+    testsuite with nose2.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 24 Oct 2021 12:18:23 -0700
+
+python-flexmock (0.10.10-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 20 Sep 2021 19:15:45 -0700
+
+python-flexmock (0.10.9-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 08 Sep 2021 15:58:16 -0700
+
+python-flexmock (0.10.8-1) unstable; urgency=medium
+
+  [ Stefano Rivera ]
+  * New upstream release.
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dh-python.
+  * Bump debhelper from old 12 to 13.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 01 Sep 2021 16:43:50 -0700
+
+python-flexmock (0.10.7-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 24 Aug 2021 14:42:48 -0700
+
+python-flexmock (0.10.5-1) unstable; urgency=medium
+
+  [ Stefano Rivera ]
+  * New upstream release.
+  * Add upstream metadata.
+  * Bump copyright years.
+  * Bump Standards-Version to 4.5.1, no changes needed.
+  * Bump debian/watch version to 4.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 22 Jul 2021 07:34:17 -0400
+
+python-flexmock (0.10.4-3) unstable; urgency=medium
+
+  * Drop python 2 binary package, no longer used in Debian.
+    (Closes: #937762)
+  * Bump Standards-Version to 4.5.0, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 07 May 2020 15:17:06 -0700
+
+python-flexmock (0.10.4-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Sandro Tosi ]
+  * Dont run unittests for python2 binary, to reduce pytest rdeps
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 13 Apr 2020 19:47:20 -0400
+
+python-flexmock (0.10.4-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Supporting Python 3.7.
+  * Bump debhelper compat to 12 (using B-D syntax).
+  * Bump Standards-Version to 4.4.0, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 09 Jul 2019 17:26:54 -0700
+
+python-flexmock (0.10.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.3.0, no changes needed.
+  * Bump copyright years.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 17 Jan 2019 23:27:54 +1300
+
+python-flexmock (0.10.2-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/tests: Use AUTOPKGTEST_TMP instead of ADTTMP
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Stefano Rivera ]
+  * Bump debhelper compat to 11.
+  * Declare Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.2.0, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 26 Aug 2018 20:44:01 +0100
+
+python-flexmock (0.10.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump copyright years.
+  * Switch Vcs URLs to https.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 02 Feb 2016 15:07:03 +1100
+
+python-flexmock (0.10.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update watch file to use pypi.debian.net.
+  * Update copyright
+    - Upstream switched to a different BSD-2 variant.
+    - New upstream maintainer.
+  * Bump X-Python*-Versions, upstream dropped support for < 2.6, and < 3.3.
+  * Port to pybuild.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Bump debhelper compat level to 9.
+  * Add autopkgtests.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 26 Dec 2015 13:59:55 +0200
+
+python-flexmock (0.9.7-1) unstable; urgency=low
+
+  [ Dmitry Shachnev ]
+  * Use /usr/bin/nosetests instead of /usr/bin/nosetests-X.Y (closes:
+    #707516).
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Stefano Rivera ]
+  * New Upstream version.
+  * Bump Standards-Version to 3.9.4.
+    - Bump debhelper dependency to 8.1 for build-{arch,indep} support.
+  * Bumpy copyright years.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 10 May 2013 03:18:35 +0200
+
+python-flexmock (0.9.6-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 16 Jun 2012 20:23:01 +0100
+
+python-flexmock (0.9.5-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 03 Jun 2012 09:47:51 +0100
+
+python-flexmock (0.9.4-1) unstable; urgency=low
+
+  * New upstream version.
+  * Respect DEB_BUILD_OPTIONS=nocheck.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 28 May 2012 01:31:26 +0100
+
+python-flexmock (0.9.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #668606).
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 13 Apr 2012 21:40:14 +0200

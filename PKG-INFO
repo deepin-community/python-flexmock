@@ -1,3 +1,37 @@
+Metadata-Version: 2.1
+Name: flexmock
+Version: 0.11.3
+Summary: flexmock is a testing library for Python that makes it easy to create mocks, stubs and fakes.
+Home-page: https://github.com/flexmock/flexmock
+License: BSD-2-Clause
+Keywords: mock,testing,test,unittest,pytest
+Author: Slavek Kabrda
+Maintainer: Adarsh Krishnan
+Maintainer-email: adarshk7@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Mocking
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Typing :: Typed
+Project-URL: Changes, https://flexmock.readthedocs.io/en/latest/changelog/
+Project-URL: Documentation, https://flexmock.readthedocs.io
+Project-URL: Issue Tracker, https://github.com/flexmock/flexmock/issues
+Project-URL: Repository, https://github.com/flexmock/flexmock
+Project-URL: Source Code, https://github.com/flexmock/flexmock
+Description-Content-Type: text/markdown
+
 <p align="center">
   <img alt="banner" src="https://user-images.githubusercontent.com/25169984/138661460-969caf9e-8e88-4609-87c4-1a0ab9624ee4.png">
 </p>
@@ -93,3 +127,4 @@ User guide, examples, and a full API reference is available at: https://flexmock
 ## Contributing
 
 Contributions are absolutely welcome and encouraged! See [CONTRIBUTING.md](https://github.com/flexmock/flexmock/blob/master/CONTRIBUTING.md) to get started.
+
